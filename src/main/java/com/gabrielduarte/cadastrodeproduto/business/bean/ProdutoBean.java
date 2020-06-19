@@ -4,30 +4,35 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
 @RequestScoped
-@ManagedBean(name ="produto")
+@ManagedBean(name = "produto")
 public class ProdutoBean {
-	
+
 	private String nome;
-	private String preco;
-	private Float categoria;
+	private Float preco;
+	private String categoria;
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getPreco() {
+
+	public Float getPreco() {
 		return preco;
 	}
-	public void setPreco(String preco) {
+
+	public void setPreco(Float preco) {
 		this.preco = preco;
 	}
-	public Float getCategoria() {
+
+	public String getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(Float categoria) {
+
+	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
-	
 
 }
